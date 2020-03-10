@@ -1,0 +1,16 @@
+{
+  "Hello": "Hello Sir!",
+  "Your language is": "Your language is English.",
+  "Calculate": "Calculate",
+  "placeholder": {
+    "First_Number": "First Number",
+    "Second_Number": "Second Number"
+  },
+  "Calculator": "Calculator",
+  "partials": {
+    "header": {
+      "Calculator": "Calculator"
+    }
+  },
+  "The calculation is ": "The calculation is "
+}

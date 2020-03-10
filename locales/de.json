@@ -1,0 +1,16 @@
+{
+  "Hello": "Hallo!",
+  "Your language is": "Ihre Sprache ist Deutsch.",
+  "Calculate": "Berechnen",
+  "placeholder": {
+    "First_Number": "Erste Zahl",
+    "Second_Number": "Zweite Zahl"
+  },
+  "Calculator": "Taschenrechner",
+  "partials": {
+    "header": {
+      "Calculator": "Taschenrechner"
+    }
+  },
+  "The calculation is ": "Das Ergebnis lautet "
+}

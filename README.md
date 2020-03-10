@@ -7,5 +7,11 @@ Create small Node.js file using ejs and try to finde the right i18n Libary for I
 Start calculator.js with:
 
 ```
-node calculator
+$ node calculator
+```
+
+or using nodemon:
+
+```
+$ nodemon calculator
 ```

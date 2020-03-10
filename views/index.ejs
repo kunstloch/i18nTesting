@@ -1,13 +1,22 @@
 <% include partials/header %>
 <body>
-  <h1>Calculator</h1>
-
+  <h1><%= __('Calculator') %></h1>
+  <div><%= __('Hello') %></div>
+  <br />
   <div>
-    Your language is
+    <%= __('Your language is') %>
   </div>
   <form action="/" method="post">
-    <input type="text" name="num1" placeholder="First Number" />
-    <input type="text" name="num2" placeholder="Second Number" />
-    <button type="submit" name="submit">Calculate</button>
+    <input
+      type="text"
+      name="num1"
+      placeholder="<%= __('placeholder.First_Number') %>"
+    />
+    <input
+      type="text"
+      name="num2"
+      placeholder="<%= __('placeholder.Second_Number') %>"
+    />
+    <button type="submit" name="submit"><%= __('Calculate') %></button>
   </form>
 </body>
