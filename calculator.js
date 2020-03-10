@@ -40,6 +40,7 @@ app.get('/', function(req, res) {
 // });
 
 app.post('/', function(req, res) {
+  let bla = '';
   let result = Number(req.body.num1) + Number(req.body.num2);
   let greeting = res.__('The calculation is ');
   res.send(greeting + result);

@@ -1,10 +1,10 @@
 <% include partials/header %>
 <body>
-  <h1><%= __('Calculator') %></h1>
-  <div><%= __('Hello') %></div>
+  <h1><%= __('views.index.Calculator') %></h1>
+  <div><%= __('views.index.Hello') %></div>
   <br />
   <div>
-    <%= __('Your language is') %>
+    <%= __('views.index.your_language_is') %>
   </div>
   <form action="/" method="post">
     <input
@@ -17,6 +17,8 @@
       name="num2"
       placeholder="<%= __('placeholder.Second_Number') %>"
     />
-    <button type="submit" name="submit"><%= __('Calculate') %></button>
+    <button type="submit" name="submit">
+      <%= __('views.index.Calculate') %>
+    </button>
   </form>
 </body>

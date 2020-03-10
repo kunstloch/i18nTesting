@@ -12,5 +12,13 @@
       "Calculator": "Calculator"
     }
   },
-  "The calculation is ": "The calculation is "
+  "The calculation is ": "The calculation is ",
+  "views": {
+    "index": {
+      "Calculator": "Calculator",
+      "Hello": "Hello",
+      "your_language_is": "Your language is English",
+      "Calculate": "Calculate"
+    }
+  }
 }

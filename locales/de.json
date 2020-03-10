@@ -12,5 +12,13 @@
       "Calculator": "Taschenrechner"
     }
   },
-  "The calculation is ": "Das Ergebnis lautet "
+  "The calculation is ": "Das Ergebnis lautet ",
+  "views": {
+    "index": {
+      "Calculator": "Taschenrechner",
+      "Hello": "Hallo",
+      "Calculate": "Berechnen",
+      "your_language_is": "Ihre Sprachauswahl ist Deutsch."
+    }
+  }
 }
