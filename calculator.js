@@ -13,7 +13,7 @@ app.use(i18n.init);
 // Configure i18n - updateFiles can be turned to false
 i18n.configure({
   locales: ['en', 'de'],
-  directory: __dirname + '/locales',
+  directory: path.join(__dirname, 'locales'),
   objectNotation: true,
   updateFiles: true
 });
