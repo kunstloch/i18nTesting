@@ -10,12 +10,13 @@ const PORT = process.env.PORT || 3000;
 
 app.use(i18n.init);
 
-// Configure i18n - updateFiles can be turned to false
+// Configure i18n, after first run set updateFiles to false
 i18n.configure({
   locales: ['en', 'de'],
   directory: path.join(__dirname, 'locales'),
   objectNotation: true,
-  updateFiles: true
+  updateFiles: false,
+  register: global
 });
 
 app.set('views', path.join(__dirname, 'views'));
@@ -35,6 +36,6 @@ app.get('/', function(req, res) {
 app.post('/', function(req, res) {
   let bla = '';
   let result = Number(req.body.num1) + Number(req.body.num2);
-  let greeting = res.__('The calculation is ');
+  const greeting = res.__('The calculation is ');
   res.send(greeting + result);
 });
