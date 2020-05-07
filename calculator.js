@@ -32,7 +32,7 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-// i18n ûsed on backend
+// i18n used on backend
 app.post('/', function(req, res) {
   let bla = '';
   let result = Number(req.body.num1) + Number(req.body.num2);
