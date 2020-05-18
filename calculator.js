@@ -15,7 +15,7 @@ i18n.configure({
   locales: ['en', 'de'],
   directory: path.join(__dirname, 'locales'),
   objectNotation: true,
-  updateFiles: false,
+  updateFiles: true,
   register: global
 });
 
@@ -32,10 +32,22 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
+// using variables in i18n
+
+
 // i18n used on backend
 app.post('/', function(req, res) {
+
+  let today = new Date();
+  let dd = String(today.getDate()).padStart(2, '0');
+  let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  let yyyy = today.getFullYear();
+  
+  today = dd + '.' + mm + '.' + yyyy;
+  console.log(today);
+
   let bla = '';
   let result = Number(req.body.num1) + Number(req.body.num2);
   const greeting = res.__('The calculation is ');
-  res.send(greeting + result);
+  res.send(greeting + result + ". " +res.__('today_is_{{today}}', { today: today }));
 });
